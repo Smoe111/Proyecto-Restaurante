@@ -7,9 +7,8 @@ public class Restaurante {
     private String nombre;
     private List<IniciarSesion> iniciarSesion;
 
-    public Restaurante(String nombre) {
-        this.nombre = nombre;
-        iniciarSesion = new ArrayList<IniciarSesion>();
+    public Restaurante( ){
+                iniciarSesion = new ArrayList<IniciarSesion>();
     }
 
     public String getNombre() {

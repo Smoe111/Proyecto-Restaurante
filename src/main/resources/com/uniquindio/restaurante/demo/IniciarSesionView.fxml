@@ -40,7 +40,7 @@
                         <Insets left="5.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="txtUsuario" prefHeight="29.0" prefWidth="255.0" promptText="ejm. usuario123" style="-fx-background-color: #bab9b5;">
+                  <TextField fx:id="txtUsuario" prefHeight="78.0" prefWidth="289.0" style="-fx-background-color: #bab9b5;">
                      <padding>
                         <Insets left="10.0" />
                      </padding>
@@ -50,6 +50,9 @@
                      <effect>
                         <Blend />
                      </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
                   </TextField>
                   <Label text="Contraseña">
                      <VBox.margin>
@@ -63,30 +66,43 @@
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" top="5.0" />
                      </VBox.margin>
-                     <font>
-                        <Font size="14.0" />
-                     </font>
                   </PasswordField>
-                  <Button fx:id="btnIngresar" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="29.0" prefWidth="300.0" style="-fx-background-color: #6c746c;" text="Ingresar" textAlignment="CENTER" textFill="#ecebe4" VBox.vgrow="ALWAYS">
+                  <Button fx:id="btnIngresar" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buscarUsuario" prefHeight="29.0" prefWidth="300.0" style="-fx-background-color: #6c746c;" text="Ingresar" textAlignment="CENTER" textFill="#ecebe4" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" top="30.0" />
                      </VBox.margin>
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label contentDisplay="CENTER" text="No te has registrado aún?" textAlignment="CENTER" textFill="#383e0c" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="btnRegistrarse" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchRegistrarse" prefHeight="25.0" prefWidth="309.0" style="-fx-background-color: #6c746c;" text="Registrarse" textFill="#ecebe4" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
                      </font>
                   </Button>
                </children>
                <VBox.margin>
-                  <Insets left="20.0" right="20.0" top="20.0" />
+                  <Insets left="20.0" right="20.0" top="10.0" />
                </VBox.margin>
             </VBox>
          </children>
       </VBox>
       <VBox alignment="CENTER" prefHeight="400.0" prefWidth="257.0" style="-fx-background-color: #6C746C;" HBox.hgrow="ALWAYS">
          <children>
-            <ImageView fitHeight="312.0" fitWidth="249.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgLogo" fitHeight="312.0" fitWidth="249.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../../Downloads/Diseño%20sin%20título%20(1).png" />
+                  <Image />
                </image>
             </ImageView>
          </children>

@@ -3,11 +3,11 @@ package com.uniquindio.restaurante.demo;
 public class IniciarSesion {
 
     String usuario;
-    String contraseña;
+    String clave;
 
     public IniciarSesion( String u, String c ) {
         this.usuario = usuario;
-        this.contraseña= contraseña;
+        this.clave = clave;
     }
 
     public String getUsuario() {
@@ -18,11 +18,11 @@ public class IniciarSesion {
         this.usuario = usuario;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getClave() {
+        return clave;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setClave(String clave) {
+        this.clave = clave;
     }
 }

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f7f2e7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniquindio.restaurante.demo.Controller.IniciarSesionController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f7f2e7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IniciarSesionController">
    <children>
       <VBox alignment="CENTER" prefHeight="400.0" prefWidth="355.0" HBox.hgrow="ALWAYS">
          <children>
@@ -100,10 +100,8 @@
       </VBox>
       <VBox alignment="CENTER" prefHeight="400.0" prefWidth="257.0" style="-fx-background-color: #6C746C;" HBox.hgrow="ALWAYS">
          <children>
-            <ImageView fx:id="imgLogo" fitHeight="312.0" fitWidth="249.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image />
-               </image>
+            <ImageView fitHeight="361.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+
             </ImageView>
          </children>
       </VBox>

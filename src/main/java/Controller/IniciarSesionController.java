@@ -1,4 +1,4 @@
-package com.uniquindio.restaurante.demo.Controller;
+package Controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -6,11 +6,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.io.IOException;
+import javafx.fxml.Initializable;
 
 
-public class IniciarSesionController {
+public class IniciarSesionController  implements  Initializable{
 
     @FXML
     private ResourceBundle resources;
@@ -22,7 +24,7 @@ public class IniciarSesionController {
     private Button btnIngresar;
 
     @FXML
-    private PasswordField txtContraseña;
+    private PasswordField txtClave;
 
     @FXML
     private TextField txtUsuario;
@@ -41,6 +43,13 @@ public class IniciarSesionController {
     @FXML
     void buscarUsuario(ActionEvent event) {
 
+    }
+    @FXML
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        String logourl = "\"C:\\Users\\Lenovo\\Documents\\Programacion II\\Proyecto Restaurante\\demo\\src\\Diseño sin título (1).png\"";
+        Image logo = new Image(logourl);
+        imgLogo.setImage(logo);
     }
 
 }

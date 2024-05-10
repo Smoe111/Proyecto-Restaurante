@@ -1,4 +1,4 @@
-package com.uniquindio.restaurante.demo.Controller;
+package Controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -24,7 +24,7 @@ public class helloController {
     @FXML
     void onHelloButtonClick(ActionEvent event) {
 
-        welcomeText.setText("puta");
+        welcomeText.setText("hola");
 
 
 

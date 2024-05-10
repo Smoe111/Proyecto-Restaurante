@@ -1,13 +1,16 @@
-package com.uniquindio.restaurante.demo;
+package model;
 
 public class IniciarSesion {
 
     String usuario;
     String clave;
 
-    public IniciarSesion( String u, String c ) {
+    public IniciarSesion( String usuario, String clave ) {
         this.usuario = usuario;
         this.clave = clave;
+    }
+
+    public IniciarSesion() {
     }
 
     public String getUsuario() {

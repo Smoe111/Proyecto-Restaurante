@@ -13,6 +13,8 @@ module com.uniquindio.restaurante.demo {
 
     opens com.uniquindio.restaurante.demo to javafx.fxml;
     exports com.uniquindio.restaurante.demo;
-    exports com.uniquindio.restaurante.demo.Controller;
-    opens com.uniquindio.restaurante.demo.Controller to javafx.fxml;
+    exports Controller;
+    opens Controller to javafx.fxml;
+    exports model;
+    opens model to javafx.fxml;
 }

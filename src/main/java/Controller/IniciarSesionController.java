@@ -12,7 +12,7 @@ import java.io.IOException;
 import javafx.fxml.Initializable;
 
 
-public class IniciarSesionController  implements  Initializable{
+public class IniciarSesionController {
 
     @FXML
     private ResourceBundle resources;
@@ -44,12 +44,6 @@ public class IniciarSesionController  implements  Initializable{
     void buscarUsuario(ActionEvent event) {
 
     }
-    @FXML
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        String logourl = "\"C:\\Users\\Lenovo\\Documents\\Programacion II\\Proyecto Restaurante\\demo\\src\\Diseño sin título (1).png\"";
-        Image logo = new Image(logourl);
-        imgLogo.setImage(logo);
-    }
+
 
 }

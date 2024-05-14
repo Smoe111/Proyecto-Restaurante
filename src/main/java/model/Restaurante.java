@@ -6,9 +6,12 @@ import java.util.List;
 public class Restaurante {
     private String nombre;
     private List<Registrarse> registros;
+    private List<Pedido> pedidos;
+    StateRestaurante estadoActual;
 
    public Restaurante() {
        registros= new ArrayList<>();
+       estadoActual= new AbiertoState();
    }
 
     public String getNombre() {
@@ -26,6 +29,14 @@ public class Restaurante {
 
     public void agregarRegistro(Registrarse registro){
         registros.add( registro);
+    }
+
+    public void setEstadoActual(StateRestaurante state) {
+       estadoActual= state;
+    }
+
+    public void realizarAccion (){
+       estadoActual.realizarAccion();
     }
 
 

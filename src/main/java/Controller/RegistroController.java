@@ -53,6 +53,7 @@ public class RegistroController {
         registro.setDocumento(txtDocumento.getText());
         registro.setUsuario(txtUsuario.getText());
         singleton.agregarRegistro(registro);
+
     }
 
 }

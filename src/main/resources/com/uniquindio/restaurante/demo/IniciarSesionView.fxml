@@ -6,8 +6,6 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -98,12 +96,6 @@
             </VBox>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="257.0" style="-fx-background-color: #6C746C;" HBox.hgrow="ALWAYS">
-         <children>
-            <ImageView fitHeight="361.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
-
-            </ImageView>
-         </children>
-      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="257.0" style="-fx-background-color: #6C746C;" HBox.hgrow="ALWAYS" />
    </children>
 </HBox>

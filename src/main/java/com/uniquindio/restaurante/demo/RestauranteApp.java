@@ -7,7 +7,8 @@ import java.io.IOException;
 import javafx.scene.Parent;
 
 public class RestauranteApp extends Application {
-    private  static  Scene scene;
+    private static Scene scene;
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(RestauranteApp.class.getResource("IniciarSesionView.fxml"));
@@ -17,6 +18,10 @@ public class RestauranteApp extends Application {
         stage.show();
     }
 
+    public static void main(String[] args) {
+        launch();
+    }
+
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(RestauranteApp.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
@@ -24,9 +29,5 @@ public class RestauranteApp extends Application {
 
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
-    }
-
-    public static void main(String[] args) {
-        launch();
     }
 }

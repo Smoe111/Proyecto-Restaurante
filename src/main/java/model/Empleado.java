@@ -13,7 +13,7 @@ public class Empleado{
         this.nombre = nombre;
         this.apellido = apellido;
         this.rolEmpleado = rolEmpleado;
-        this.estado= estado;
+        this.estado= new Disponible();
     }
 
     public String getNombre() {
@@ -26,5 +26,12 @@ public class Empleado{
         return rolEmpleado;
     }
 
+    public StateEmpleado getEstado() {
+        return estado;
+    }
+
+    public void realizarAccion(){
+        estado.realizarAccion();
+    }
 
 }

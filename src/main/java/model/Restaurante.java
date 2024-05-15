@@ -7,11 +7,11 @@ public class Restaurante {
     private String nombre;
     private List<Registrarse> registros;
     private List<Pedido> pedidos;
-    StateRestaurante estadoActual;
+    StateEmpleado estadoActual;
 
    public Restaurante() {
        registros= new ArrayList<>();
-       estadoActual= new AbiertoState();
+
    }
 
     public String getNombre() {
@@ -31,7 +31,7 @@ public class Restaurante {
         registros.add( registro);
     }
 
-    public void setEstadoActual(StateRestaurante state) {
+    public void setEstadoActual(StateEmpleado state) {
        estadoActual= state;
     }
 

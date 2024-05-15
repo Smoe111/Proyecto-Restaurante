@@ -1,4 +1,5 @@
 package model;
 
-public class Usuario {
+public interface Usuario {
+    void build();
 }

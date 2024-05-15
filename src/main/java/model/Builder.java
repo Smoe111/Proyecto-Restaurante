@@ -1,4 +1,6 @@
 package model;
 
-public interface Builder {
+public interface Builder<U> {
+
+    U build();
 }

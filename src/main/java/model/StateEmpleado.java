@@ -1,6 +1,6 @@
 package model;
 
-public interface StateRestaurante {
+public interface StateEmpleado {
 
     void realizarAccion();
 }

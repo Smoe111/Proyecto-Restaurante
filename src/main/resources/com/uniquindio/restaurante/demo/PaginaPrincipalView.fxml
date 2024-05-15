@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ecebe4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PaginaPrincipalController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="113.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="134.0">
+               <children>
+                  <Label maxHeight="1.7976931348623157E308" prefHeight="54.0" prefWidth="123.0" style="-fx-background-color: #6c746c;" text="EDDI'S RESTAURANTE" textAlignment="CENTER" textFill="#ecebe4" wrapText="true">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LbEstado" text="Seleccione su estado actual" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="BoxStateEmpleado" prefWidth="150.0" style="-fx-background-color: #746c6c;">
+                     <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

@@ -2,7 +2,9 @@ package model;
 
 public class Disponible implements  StateEmpleado {
     @Override
-    public void realizarAccion() {
+    public String realizarAccion() {
+
+        return  "Puede tomar pedidos";
 
     }
 }

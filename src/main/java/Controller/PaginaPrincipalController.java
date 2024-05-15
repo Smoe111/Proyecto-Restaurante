@@ -32,8 +32,11 @@ public class PaginaPrincipalController implements Initializable {
     @FXML
     private Label LbEstado;
 
+    @FXML
+    private Label labelAccion;
+
     private  void actualizarEstado(){
-        LbEstado.setText(empleado.getEstado().toString());
+       labelAccion.setText(empleado.getEstado().realizarAccion());
     }
 
     @FXML
@@ -61,6 +64,7 @@ public class PaginaPrincipalController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         BoxStateEmpleado.getItems().addAll(estado);
         BoxStateEmpleado.setOnAction(this:: getState);
+        actualizarEstado();
     }
 
     public  void getState(ActionEvent event ){

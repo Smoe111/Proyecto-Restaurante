@@ -2,7 +2,7 @@ package model;
 
 public class Descanso implements  StateEmpleado{
     @Override
-    public void realizarAccion() {
-
+    public String realizarAccion() {
+        return  "No se puede realizar el pedido";
     }
 }

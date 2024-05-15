@@ -5,14 +5,16 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import model.*;
 
-public class PaginaPrincipalController {
+public class PaginaPrincipalController implements Initializable {
 
     private BuilderEmpleado empleadoB;
     private  Empleado empleado;
+    private  String[] estado= {"Disponible", "Ocupado", "Descanso"};
 
     public PaginaPrincipalController() {
         this.empleadoB= new BuilderEmpleado();
@@ -53,6 +55,17 @@ public class PaginaPrincipalController {
         }
         actualizarEstado();
 
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        BoxStateEmpleado.getItems().addAll(estado);
+        BoxStateEmpleado.setOnAction(this:: getState);
+    }
+
+    public  void getState(ActionEvent event ){
+        String estado= BoxStateEmpleado.getValue();
+        LbEstado.setText(estado);
     }
 }
 

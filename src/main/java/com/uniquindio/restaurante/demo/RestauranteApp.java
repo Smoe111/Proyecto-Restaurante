@@ -11,7 +11,7 @@ public class RestauranteApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(RestauranteApp.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(RestauranteApp.class.getResource("PaginaPrincipalView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setTitle("EDDI´S RESTAURANTE");
         stage.setScene(scene);

@@ -2,5 +2,6 @@ package model;
 
 public interface StateEmpleado {
 
-    String realizarAccion();
+    void realizarAccion();
+    String getEstado();
 }

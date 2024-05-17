@@ -12,14 +12,14 @@ import model.*;
 
 public class PaginaPrincipalController implements Initializable {
 
-    private BuilderEmpleado empleadoB;
-    private  Empleado empleado;
+
     private  String[] estado= {"Disponible", "Ocupado", "Descanso"};
 
     public PaginaPrincipalController() {
-        this.empleadoB= new BuilderEmpleado();
-        this.empleado= new Empleado();
+
     }
+
+
     @FXML
     private ResourceBundle resources;
 
@@ -32,25 +32,19 @@ public class PaginaPrincipalController implements Initializable {
     @FXML
     private Label LbEstado;
 
-    @FXML
-    private Label labelAccion;
-
-    private  void actualizarEstado(){
-       labelAccion.setText(empleado.getEstado().realizarAccion());
-    }
 
     @FXML
     void cambiarEstado(ActionEvent event)  {
         String opcion= BoxStateEmpleado.getValue();
         switch (opcion){
             case "Disponible":
-                empleadoB.setEstado(new Disponible());
+                empleado.setEstado(new Disponible());
                 break;
             case "Ocupado":
-                empleadoB.setEstado(new Ocupado());
+                empleado.setEstado(new Ocupado());
                 break;
             case  "Descanso":
-                empleadoB.setEstado(new Descanso());
+                empleado.setEstado(new Descanso());
                 break;
             default:
                 break;
@@ -70,6 +64,9 @@ public class PaginaPrincipalController implements Initializable {
     public  void getState(ActionEvent event ){
         String estado= BoxStateEmpleado.getValue();
         LbEstado.setText(estado);
+    }
+    private  void actualizarEstado(){
+        LbEstado.setText(empleado.getEstado().toString());
     }
 }
 
